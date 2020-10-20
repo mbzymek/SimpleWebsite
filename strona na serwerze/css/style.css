@@ -1,0 +1,227 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-image: linear-gradient(180deg, rgba(0,0,0,0) 75%, rgba(194,192,192) 95%);
+}
+
+.hero-bg{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .75);
+}
+
+.wrapper{
+    margin: auto;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Nawigacja */
+
+
+nav{
+    position: sticky;
+    top: 0;
+    height: 60px;
+    line-height: 60px;
+    background-color: rgb(194,192,192);
+    text-align: center;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.nav-mobile{
+    margin-right: 100%;
+}
+
+.nav-mobile button{
+    padding: 0 30px;
+    line-height: 60px;
+    font-size: 30px;
+    background: none;
+    border: none;
+}
+
+.nav-desktop{
+    display: none;
+}
+
+/* Header */
+.header-img{
+    position: relative;
+    height: 330px;
+    background-image: url('../images/computer-2982270_640.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.header-bg{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .65);
+}
+
+.header-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 3px 3px 5px black;
+    text-align: center;
+}
+
+.header-text h1{
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.header-text span{
+    color: royalblue;
+}
+
+.header-text p{
+    font-size: 14px;
+}
+
+
+/* Main */
+
+
+section{
+    margin: 80px 0;
+}
+
+.underline{
+    position: relative;
+}
+
+.line{
+    position: absolute;
+    left: calc(50% - 30px);
+    bottom: -5px;
+    width: 60px;
+    height: 3px;
+    background-color: rgb(0, 140, 255);
+}
+
+main h2{
+    font-size: 28px;
+    margin: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Jezeli chcemy pozbyc sie bialych ramek w section dodajemy ta klase
+.project{
+    font-size: 0px;
+} */
+
+.about-us p{
+    padding: 0 20px;
+}
+
+.main-project{
+    position: relative;
+    height: 260px;
+    width: 100%;
+    display: inline-block;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.main-project:hover .project-text h3{
+    transform: scale(1.2);
+}
+
+.first-project{
+    background-image: url('/images/keyboard-70506_1920.jpg'); 
+}
+.second-project{
+    background-image: url('/images/work-731198_1920.jpg');
+}
+.third-project{
+    background-image: url('/images/technology-1283624_1920.jpg');
+}
+.fourth-project{
+    background-image: url('/images/children-593313_1920.jpg'); 
+}
+
+.project-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 27px;
+    text-transform: uppercase;
+}
+
+.project-text h3{
+    transition: transform .3s;
+
+}
+
+.contact{
+    text-align: center;
+}
+
+
+.contact i{
+    font-size: 20px;
+    margin-right: 10px;
+    line-height: 160%;
+}
+@media (min-width: 400px){
+    .header-text h1{
+        margin-bottom: 5px;
+        font-size: 36px;
+    }
+
+    .header-text p{
+        font-size: 18px;
+    }
+
+    .project-text h3{
+        font-size: 30px;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+    }
+
+    .project-text{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+        font-size: 19px;
+    }
+    footer{
+        font-size: 14px;
+    }
+    
+}
+
+/* footer */
+
+footer{
+    height: 60px;
+    background-color: #fff;
+    text-align: center;
+    font-size: 10px;
+    line-height: 60px;
+    border-top: 1px solid rgb(73, 73, 73);
+    background-color: rgb(194,192,192);
+}
